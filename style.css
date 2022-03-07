@@ -1,0 +1,396 @@
+/*
+#3496d8  plava
+#8f8f8f  tamno siva
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900|Slabo+27px");
+/*****************
+mixins
+*****************/
+/*****************
+basic styles
+*****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: "Slabo 27px", serif;
+  color: var(--tamnoSiva); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .container {
+      width: 100%; } }
+  @media only screen and (min-width: 651px) and (max-width: 896px) {
+    .container {
+      width: 90%; } }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+html {
+  scroll-behavior: smooth; }
+
+/*****************
+typography
+*****************/
+h2 {
+  color: #3496d8;
+  font-size: 2.5rem; }
+
+/*****************
+header
+*****************/
+header {
+  display: flex;
+  flex-direction: column;
+  background: url(img/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      header .navbar {
+        display: block; } }
+  @media only screen and (min-width: 200px) and (max-width: 650px) and (min-width: 200px) and (max-width: 650px) {
+    header .navbar {
+      text-align: center; } }
+
+    header .navbar a {
+      color: #fff; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        header .navbar a {
+          padding: 10px; } }
+      header .navbar a:hover {
+        color: #3496d8; }
+    header .navbar .logo a {
+      text-transform: capitalize;
+      font-size: 1.6rem;
+      font-weight: 900; }
+    header .navbar nav ul {
+      display: flex; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        header .navbar nav ul {
+          display: block; } }
+      header .navbar nav ul li {
+        margin-left: 40px; }
+        @media only screen and (min-width: 200px) and (max-width: 650px) {
+          header .navbar nav ul li {
+            margin: 0;
+            padding: 10px; } }
+        header .navbar nav ul li a {
+          text-transform: uppercase; }
+  header hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #fff; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      header hgroup {
+        height: 65vh; } }
+    header hgroup h1 {
+      font-size: 4rem;
+      text-transform: capitalize; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        header hgroup h1 {
+          font-size: 2.5rem; } }
+    header hgroup h3 {
+      font-size: 1.6rem; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        header hgroup h3 {
+          font-size: 1.2rem; } }
+    header hgroup p {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      letter-spacing: 1px; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        header hgroup p {
+          margin-top: 15px;
+          font-size: 1rem; } }
+
+/*****************
+introduction
+*****************/
+.introduction {
+  padding: 50px 0; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .introduction {
+      padding: 30px 0; } }
+  .introduction .container {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .introduction .container {
+        display: block; } }
+    .introduction .container .introduction_image {
+      width: 45%; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .introduction .container .introduction_image {
+          width: 100%; } }
+    .introduction .container .introduction_text {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .introduction .container .introduction_text {
+          width: 100%;
+          padding: 10px;
+          align-items: center; } }
+      .introduction .container .introduction_text h2 {
+        margin-bottom: 10px; }
+      .introduction .container .introduction_text p {
+        color: #8f8f8f; }
+        @media only screen and (min-width: 200px) and (max-width: 650px) {
+          .introduction .container .introduction_text p {
+            padding: 10px 0; } }
+      .introduction .container .introduction_text button {
+        background-color: #3496d8;
+        color: #fff;
+        border: none;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding: 20px 60px;
+        overflow: hidden;
+        margin: 10px 0;
+        border-radius: 30px;
+        transition: 0.5 ease; }
+        .introduction .container .introduction_text button:hover {
+          background-color: #8f8f8f;
+          cursor: pointer; }
+
+/*****************
+column
+*****************/
+.column {
+  padding: 50px 0; }
+  .column .container {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .column .container {
+        display: block; } }
+    .column .container article {
+      width: 31%;
+      text-align: center; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .column .container article {
+          width: 100%;
+          padding: 10px; } }
+      .column .container article i {
+        font-size: 3rem;
+        color: #3496d8; }
+      .column .container article h3 {
+        color: #3496d8;
+        font-size: 1.3rem;
+        margin: 25px 0 20px; }
+      .column .container article p {
+        text-align: justify;
+        color: #8f8f8f; }
+
+/*****************
+galery
+*****************/
+.galery {
+  padding: 50px 0; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    .galery {
+      padding: 30px 0; } }
+  .galery .container h2 {
+    text-align: center; }
+  .galery .container p {
+    text-align: center;
+    margin: 20px 0; }
+  .galery .container .galery_firstRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .galery .container .galery_firstRow div {
+      flex: 0 0 23%;
+      height: 300px;
+      border-bottom: 10px solid #3496d8;
+      position: relative; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .galery .container .galery_firstRow div {
+          flex: 0 0 50%;
+          height: 200px; } }
+      .galery .container .galery_firstRow div span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        background: #3496d8;
+        padding: 10px 25px;
+        opacity: 0.7;
+        font-weight: bold; }
+    .galery .container .galery_firstRow div:nth-child(1) {
+      background: url(img/works1.jpg);
+      background-position: center;
+      background-size: cover; }
+    .galery .container .galery_firstRow div:nth-child(2) {
+      background: url(img/works2.jpg);
+      background-position: center;
+      background-size: cover; }
+    .galery .container .galery_firstRow div:nth-child(2) {
+      background: url(img/works2.jpg);
+      background-position: center;
+      background-size: cover; }
+    .galery .container .galery_firstRow div:nth-child(3) {
+      background: url(img/works3.jpg);
+      background-position: center;
+      background-size: cover; }
+    .galery .container .galery_firstRow div:nth-child(4) {
+      background: url(img/works4.jpg);
+      background-position: center;
+      background-size: cover; }
+  .galery .container .galery_secondRow {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      .galery .container .galery_secondRow {
+        margin: 0; } }
+    .galery .container .galery_secondRow div {
+      flex: 0 0 48.5%;
+      height: 300px;
+      height: 300px;
+      border-bottom: 10px solid #3496d8;
+      position: relative; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        .galery .container .galery_secondRow div {
+          flex: 0 0 50%;
+          height: 200px; } }
+      .galery .container .galery_secondRow div span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        background: #3496d8;
+        padding: 10px 25px;
+        opacity: 0.7;
+        font-weight: bold; }
+    .galery .container .galery_secondRow div:nth-child(1) {
+      background: url(img/works5.jpg);
+      background-position: center;
+      background-size: cover; }
+    .galery .container .galery_secondRow div:nth-child(2) {
+      background: url(img/works2.jpg);
+      background-position: center;
+      background-size: cover; }
+
+/*****************
+footer
+*****************/
+footer {
+  height: 75vh;
+  padding: 50px 0;
+  background: url(img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff; }
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
+    footer {
+      padding: 30px 10px;
+      height: auto; } }
+  footer h2 {
+    color: #fff;
+    font-size: 3rem;
+    border-bottom: 10px solid #fff;
+    display: inline-block; }
+  footer hr {
+    height: 1px;
+    background: #fff;
+    border: none;
+    margin-bottom: 30px; }
+  footer .contact {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem; }
+    @media only screen and (min-width: 200px) and (max-width: 650px) {
+      footer .contact {
+        display: block; }
+        footer .contact p {
+          padding: 10px 0; } }
+    footer .contact i {
+      margin-right: 10px; }
+    footer .contact .contact_leftSide {
+      height: 50vh;
+      flex: 0 0 49%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        footer .contact .contact_leftSide {
+          width: 100%;
+          height: auto;
+          padding: 10px; } }
+    footer .contact .contact_righSide {
+      height: 50vh;
+      flex: 0 0 49%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      @media only screen and (min-width: 200px) and (max-width: 650px) {
+        footer .contact .contact_righSide {
+          height: auto;
+          display: block;
+          width: 100%; } }
+      @media only screen and (min-width: 651px) and (max-width: 896px) {
+        footer .contact .contact_righSide {
+          height: auto; } }
+      footer .contact .contact_righSide p {
+        width: 100%;
+        padding: 0 10px 20px 10px; }
+      footer .contact .contact_righSide form input {
+        border: none;
+        padding: 0.8rem 1.3rem 0.8rem 0.8rem; }
+        @media only screen and (min-width: 200px) and (max-width: 650px) {
+          footer .contact .contact_righSide form input {
+            padding: 10px;
+            display: block;
+            width: 100%;
+            border-radius: 3px; } }
+      footer .contact .contact_righSide form button {
+        padding: 0.8rem 1.4rem;
+        background-color: #3496d8;
+        color: #fff;
+        border: none;
+        letter-spacing: 1px;
+        overflow: hidden;
+        margin: 10px 0;
+        transition: 0.5 ease; }
+        @media only screen and (min-width: 200px) and (max-width: 650px) {
+          footer .contact .contact_righSide form button {
+            width: 100%;
+            margin: 10px auto;
+            border-radius: 3px; } }
+        footer .contact .contact_righSide form button:hover {
+          background-color: #8f8f8f;
+          cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
